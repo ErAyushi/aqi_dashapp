@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AQI Predictor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h1>AQI Predictor</h1>
+    <p>Your predicted AQI value for {{ month }}-{{ year }} is:</p>
+    <h2>{{ aqi }}</h2>
+    <div id="map"></div>
+    <script src="{{ url_for('static', filename='map.js') }}"></script>
+  </body>
+</html>

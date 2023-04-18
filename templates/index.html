@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AQI Predictor</title>
+  </head>
+  <body>
+    <h1>AQI Predictor</h1>
+    <p>Enter a month and year to get the predicted AQI value for your city:</p>
+    <form action="/predict" method="POST">
+      <label for="month">Month :</label>
+      <input type="number" id="month" name="month" min="1" max="12" required>
+      <br><br>
+      <label for="year">Year :</label>
+      <input type="number" id="year" name="year" min="2015" max="2022" required>
+      <br><br>
+      <input type="submit" value="Predict AQI">
+    </form>
+  </body>
+</html>
